@@ -57,7 +57,7 @@ This is the main function that needs to be called to create tidy data. It accept
 
 It creates a txt file names HAR_tidy_dataset.txt within the mentioned data path. This can be read into R and viewed as below
 
-ds <- read.table("HAR_tidy_dataset.txt", header = T, stringsAsFactors = F)
+ds <- read.table("HAR_tidy_dataset.txt", header = T, stringsAsFactors = F); 
 View(ds)
 
 

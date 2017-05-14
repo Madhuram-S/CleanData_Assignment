@@ -48,13 +48,13 @@ This is the main function that needs to be called to create tidy data. It accept
     * fileurl - location of the raw data zipfile
     * datapath - path where all data files are to extracted and final file to be written
 
-Key dependencies
-------------------
+#### Key dependencies
+
     * The files mentioned in Step 2 above should be present with the same naming and format for it to extract data. If not error is produced
     * plyr and dplyr packages are needed for program execution. It automatically loads the packages if already installed. If not installed, error is produced
     
-Output
-------
+#### Output
+
 It creates a txt file names HAR_tidy_dataset.txt within the mentioned data path. This can be read into R and viewed as below
 
 ds <- read.table("HAR_tidy_dataset.txt", header = T, stringsAsFactors = F)
